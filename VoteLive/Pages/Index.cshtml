@@ -1,0 +1,71 @@
+﻿@page
+
+
+    <div class="text-center">
+        <h3 class="display-4">Vote for the ballon d'or winner of 2008!</h3>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 80%;">
+                    <img src="~/img/Messi.webp" class="card-img-top" alt="Messi">
+                    <div class="card-body">
+                        <h5 class="card-title">Messi</h5>
+                        <input type="radio" name="votedPlayer" id="Messi" value="Messi" />
+                        <lable for="Messi"></lable>
+                        <br /><span id="MessiBlock"></span><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 80%;">
+                    <img src="~/img/CR7.webp" class="card-img-top" alt="C.Ronaldo">
+                    <div class="card-body">
+                        <h5 class="card-title">C.Ronaldo</h5>
+                        <input type="radio" name="votedPlayer" id="Ronaldo" value="C_Ronaldo" />
+                        <lable for="Ronaldo"></lable>
+                        <br /><span id="RonaldoBlock"></span><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 80%;">
+                    <img src="~/img/Kaka.webp" class="card-img-top" alt="Kaka">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaka</h5>
+                        <input type="radio" name="votedPlayer" id="Kaka" value="Kaka" />
+                        <lable for="Kaka"></lable>
+                        <br /><span id="KakaBlock"></span><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="container">
+    <div class="row p-3">
+        <div class="col-6 text-start">
+            <input type="button" id="sendButton" value="Vote Here" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/votePool.js"></script>
